@@ -1,0 +1,428 @@
+/*
+   Style Sheet
+   Author: Jacob Stuchlik
+   Date:   25 Nov 2016
+
+
+*/
+
+header, article, aside, figure, figcaption, hgroup, section, nav as blocks {
+	display: block;
+	
+	}
+	
+	
+/* Programs table style rules */
+
+table.programs {
+	width: 100%;
+	border: 2px solid black;
+	border-collapse: collapse;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+/* Alignment style rule */
+
+table.programs caption {
+	caption-side: bottom;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+	
+/* Table data cells style rule */
+
+table.programs tbody td {
+	font-size: 1.5em;
+	border: 1px solid black;
+	padding: 2px;
+}
+	
+table.programs tr {
+	height: 25px;
+}
+	
+/* Header row group style rules */
+
+table.programs thead tr {
+	color: white;
+	background-color: rgb(105, 177, 60);
+}
+	
+/* Table header cells within header row group style rules */
+
+table.programs thead tr th {
+	font-size: 1em;
+	border: 1px solid black;
+}
+
+table.programs tbody tr th {
+	font-size: 1.5em;
+	border: 1px solid black;
+	vertical-align: top;
+}
+
+table.programs td {
+	text-align: center;
+}
+
+table.programs img {
+	/* rounded corners */
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}
+
+
+
+	
+body {
+	background: black url(IMG_13.jpg) top left repeat;
+	position: relative;
+	width: 95%;
+
+}
+	
+html {
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+
+/* Set default style for every element: */
+
+	body * {
+		font-family: Geneva, sans-serif;
+		font-size: 100%;
+		padding: 0px;
+		margin: 0px;
+		}	
+
+/* remove underlining from every hypertext link */
+
+nav a {
+	text-decoration: none;
+	}
+
+
+	
+#main h2 {
+	margin-bottom: 15px;
+	margin-top: 30px;
+}
+
+#main span h2 {
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+
+iframe {
+	margin-left: 116.2px;
+	margin-right: auto;
+}
+
+
+/* Navigation styles */
+
+nav.horizontal {
+	width: 120%;
+	margin-left: 20%;
+
+}
+
+nav.horizontal h1 {
+	color: blue;
+	font-size: 300%;
+	font-family: Geneva;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-variant: small-caps;
+	float: bottom;
+	padding-right: 5px;
+}
+	
+nav.horizontal li {
+	display: block;
+	float: left;
+	width: 10%;
+	background-color: blue;
+	border-bottom: 3px solid black;
+	border-top: 5px solid black;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	margin-top: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 85%;
+}
+
+nav.horizontal a {
+	color: white;
+}
+
+nav.horizontal a:hover {
+	color: rgb(212, 204, 61);
+	border: 2px solid rgb(212, 204, 61);
+}
+
+
+/* #main styles */
+
+#main {
+	float: left; 
+	clear: left;
+	margin-left: 20%;
+	margin-top: 20px;
+	width: 60%;
+	text-align: justify;
+}
+	
+#main h1 {
+	color: rgb(189, 131, 82);
+	font-size: 180%;
+	font-weight: normal;
+	letter-spacing: 5px;
+	text-align: left;
+	border-bottom: 3px solid #2d04ff;
+	padding-bottom: 15px;
+}
+
+#main img {
+	padding-top: 10px;
+}
+	
+#main p {
+	margin: 15px;
+	}
+
+#main ul {
+	list-style-type: none;
+	margin: 25px;
+	margin-bottom: 10px;
+}
+	
+	/* figure styles */
+
+figure span {
+	clear: left;
+	float: left;
+	margin-left: -3%;
+	width: 105%;
+	background-color: white;
+	border-top: 5px solid #2d04ff;
+	border-left: 5px solid #2d04ff;
+	border-right: 5px solid #2d04ff;
+	background: url(IMG_13.jpg);
+}
+
+/* div element: scroll bars automatically if overflow - 
+whitespace property to prevent from wrapping */
+
+figure span {
+	white-space: nowrap;
+	overflow: auto;
+}
+
+span img {
+	margin: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+	/* rounded corners */
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}	
+
+figcaption {
+	font-size: 80%;
+	font-style: italic;
+	text-align: center;
+	margin-top: 5px;
+	
+}
+
+	
+/* aside styles */
+
+section#main div {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 20px;
+	
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+	column-gap: 20px;
+	
+	-moz-column-rule: 1px solid rgb black;
+	-webkit-column-rule: 1px solid black;
+	column-rule: 1px solid black;
+	padding-bottom: 0px;
+}
+
+div h2 {
+	text-align: center;
+}
+	
+aside {
+	border: 3px solid rgb(149, 91, 42);
+	color: rgb(149, 91, 42);
+	float: right;
+	margin: 10px;
+	width: 50%;
+	position: relative;
+	margin-left: 5%;
+
+	
+	/* rounded corners */
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}
+
+aside p {
+	font-size: 90%;
+	margin: 20px;
+}
+
+/* Field set styles */
+
+fieldset {
+	float: none;
+	margin: 10px 0px 10px 2.5%;
+	width: 50%;
+	margin: 5px;
+	padding-left: 5px;
+	margin-left: 20px;
+	
+}
+
+legend {
+	padding: 10px;
+	text-indent: 0px;
+	width: 100%;
+	text-align: center;
+	padding-top: 5px;
+}
+
+/* Label styles */
+
+label {
+	clear: left;
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	padding-bottom: 10px;
+	padding-top: 9px;
+	width: 40%;
+}
+
+/* Input control styles */
+
+input {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 7px 0px;
+	width: 50%;
+}
+
+
+/* Option button styles */
+
+fieldset.optionGroup {
+	border-width: 0px;
+}
+
+fieldset.optionGroup label {
+	display: inline;
+	float: none;
+	margin: 0px 3px 0px 0px;
+	width: 30px;
+}
+
+fieldset.optionGroup input {
+	display: inline;
+	float: none;
+	margin: 0px 0px 0px 0px;
+	width: 20px;
+}
+
+/* Text area styles */ 
+
+textarea { 
+	display: block; 
+	font-size: 0.9em; 
+	float: left; 
+	height: 150px; 
+	margin: 10px 0px; 
+	width: 50%;
+}
+
+/* Check box styles */
+
+
+
+/* Range slider styles */
+
+label.sliderLabel {
+	clear: none;
+	font-size: 0.7em;
+	margin: 10px 0px;
+	text-align: center;
+	width: 10px;
+}
+
+input[type="range"] {
+	width: 150px;
+	
+}
+
+/* Button styles */
+
+form p {
+	text-align: center;
+}
+
+input[type="submit"], input[type="reset"] {
+	display: inline;
+	height: 40px;
+	width: 200px;
+	float: top;
+}
+
+input#state {
+	width: 50px;
+}
+
+/* Selection list styles */
+
+select {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 7px 0px;
+}
+
+footer {
+display: block;
+width: 80%;
+clear: left;
+text-align: left;
+margin-top: 150px;
+margin-left: 20%;
+}
+
+footer address {
+display: block;
+width: 75%;
+clear: left;
+font-size: 0.8em;
+font-style: normal;
+font-variant: small-caps;
+margin-top: 20px;
+border-top: 3px solid #2d04ff;
+}
